@@ -83,3 +83,4 @@ if __name__ == "__main__":
     c.cleanup_realtime_only(24)
     c.collect("mondial")
     FinancePlugin().collect("EUR", "USD")
+    
