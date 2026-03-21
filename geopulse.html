@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoPulse Live - Tendances Mondiales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GeoPulse Live</h1>
+            <p>Visualisation des tendances mondiales en temps réel</p>
+            <button onclick="fetchTendances()">Actualiser les tendances</button>
+        </header>
+
+        <div id="results">
+            <p>Chargement des tendances...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', fetchTendances);
+    </script>
+</body>
+</html>
