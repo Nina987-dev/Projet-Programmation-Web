@@ -26,6 +26,7 @@ async function fetchTendances() {
     data.forEach(t => loadComments(t.id));
 }
 
+
 async function loadComments(tendanceId) {
     const response = await fetch(`get_comments.php?tendance_id=${tendanceId}`);
     const comments = await response.json();
