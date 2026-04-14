@@ -1,43 +1,36 @@
 # GeoPulse Live
 
-GeoPulse Live est une application web qui centralise et affiche en temps réel des tendances mondiales (actualités, taux de change) récupérées via des API tierces. Elle intègre également un système de commentaires dynamique pour interagir sur chaque sujet abordé.
+GeoPulse Live est une application web interactive permettant de visualiser des données mondiales (économie, population, climat) sous forme de graphiques dynamiques.
 
-*(Version en cours de développement)*
+L’objectif du projet est de transformer des données brutes en une interface claire, intuitive et interactive, facilitant leur compréhension et leur analyse.
+
+L’application repose sur une architecture simple :
+Frontend (JavaScript) → Backend (PHP) → Fichiers JSON
+
+## Fonctionnalités
+
+- Sélection d’une catégorie (économie, population, climat)
+- Choix d’un pays via une carte interactive ou une liste déroulante
+- Sélection d’un indicateur
+- Affichage dynamique de graphiques (Chart.js)
+- Système de commentaires utilisateurs
+- Authentification (inscription / connexion)
 
 ## Prérequis
-* **Serveur web local** : XAMPP ou WAMP (avec Apache et PHP).
-* **Base de données** : PostgreSQL.
-* **Python 3** : Pour les scripts de collecte de données.
 
-## Installation et Configuration
+- Serveur web local : XAMPP ou WAMP (Apache + PHP)
+- Navigateur web moderne (Chrome recommandé)
 
-### 1. Base de données et Backend Python
-* Créer une base de données PostgreSQL.
-* Créer un fichier `.env` à la racine du projet et configurer les accès (exemple : `DB_NAME=geopulse_db`).
-* Exécuter le script d'initialisation pour créer les tables :
-  `python init_db.py`
+## Installation
 
-### 2. Serveur Web (PHP)
-* Placer le dossier complet du projet dans le répertoire `htdocs` (pour XAMPP) ou `www` (pour WAMP).
-* Dans le fichier de configuration `php.ini` d'Apache, s'assurer que les extensions PostgreSQL sont activées en enlevant le point-virgule au début des lignes :
-  * `extension=pdo_pgsql`
-  * `extension=pgsql`
-* Démarrer le module Apache depuis le panneau de contrôle XAMPP/WAMP.
+1. Cloner ou télécharger le projet
+2. Placer le dossier dans :
+   - `htdocs` (XAMPP)
+   - ou `www` (WAMP)
 
-## Lancement du Projet
+3. Démarrer Apache depuis le panneau de contrôle
 
-Pour démarrer l'application et actualiser les données, suivez ces étapes :
+## Lancement
 
-1. **Collecte des données** :
-   Lancez le collecteur pour récupérer les dernières tendances et alimenter la base :
-   `python collecteur.py`
+Ouvrir dans le navigateur :
 
-2. **Accès à l'interface** :
-   Ouvrez votre navigateur web et accédez à la page principale :
-   `http://localhost/Projet%20programmation%20web/geopulse.html`
-
-## Utilisation
-Une fois sur l'interface, vous pouvez :
-* Visualiser les dernières tendances mondiales en temps réel.
-* Cliquer sur "Actualiser les tendances" pour recharger les données de la base.
-* Lire et poster des commentaires sous chaque carte de tendance.
