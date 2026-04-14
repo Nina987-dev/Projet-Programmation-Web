@@ -14,7 +14,7 @@ if(isset($_SESSION['user'])){
     <link rel="stylesheet" href="auth.css">
 </head>
 <body>
-    <div claas = "auth-container">
+    <div class="auth-container">
         <h1>GeoPulse Live</h1>
         <p>Bienvenue sur la plateforme</p>
 
