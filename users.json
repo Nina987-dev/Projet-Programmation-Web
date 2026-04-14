@@ -1,1 +1,23 @@
-[]
+[
+    {
+        "id": 1,
+        "nom": "Azwaw",
+        "prenom": "missipsa",
+        "email": "missipsa@gmail.com",
+        "password": "$2y$10$0uAyMUVyQFpnjnuARwgFS.fCLw1t0INKqMunGGTJVq.BfhfkSyjbm"
+    },
+    {
+        "id": 2,
+        "nom": "celina",
+        "prenom": "lina",
+        "email": "celina@gmail.com",
+        "password": "$2y$10$rtqCMDrNoKBPQ6sMDpZ38..jz4VeyDyT1Y4ytW2c03AtJeoSJ9b0i"
+    },
+    {
+        "id": 3,
+        "nom": "celina",
+        "prenom": "celina",
+        "email": "lina@gmail.com",
+        "password": "$2y$10$z2hLlQ3U2sIymN6y1ueOUOMtEXj\/dFcjyRESwsFf\/qHahqgjqFmr."
+    }
+]
