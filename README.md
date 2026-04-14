@@ -32,5 +32,36 @@ Frontend (JavaScript) → Backend (PHP) → Fichiers JSON
 
 ## Lancement
 
-Ouvrir dans le navigateur :
+Ouvrir dans le navigateur : http://localhost/monprojet/geopulse.php
 
+
+## Structure du projet
+
+- `geopulse.php` : interface principale
+- `script.js` : gestion des interactions et requêtes dynamiques
+- `style.css` : design de l’application
+- `get_data.php` : récupération des données (API simplifiée)
+- `auth.php` : interface de connexion
+- `process_login.php / process_register.php` : gestion des utilisateurs
+- `get_comments.php / add_comment.php` : gestion des commentaires
+- `logout.php` : déconnexion
+- `tendances.json` : données principales
+- `users.json` : utilisateurs
+- `comments.json` : commentaires
+
+## Fonctionnement
+
+Les données sont stockées sous format JSON et exploitées dynamiquement par le backend PHP.
+
+Lorsqu’un utilisateur effectue une action :
+1. JavaScript envoie une requête au serveur
+2. PHP lit et filtre les données JSON
+3. Les données sont renvoyées au format JSON
+4. Le frontend met à jour l’interface sans rechargement
+
+## Remarques
+
+Ce projet a été réalisé dans un cadre pédagogique.  
+Le choix du format JSON permet de simplifier l’architecture tout en mettant en évidence les mécanismes fondamentaux du développement web (requêtes, traitement de données, interaction utilisateur).
+
+Une évolution vers une base de données relationnelle (MySQL) peut être envisagée pour améliorer la scalabilité et les performances.
